@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins D. Mulbah Portfolio</title>
+    <!--=================== Main CSS ====================-->
+    <link rel="stylesheet" href="main.css">
+    <!--=================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!--=================== Remixicons ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=================== SwiperJS CSS ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--=================== Header ====================-->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav__brand">
+                    <i class="ri-code-s-slash-line"></i>Jenkins<Span>Mulbah</Span>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./about.html" class="nav__link">About Me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--=================== main ====================-->
+    <main class="main">
+        <!--=================== Contact ====================-->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="d-grid contact__wrapper">
+                    <div class="contact__content">
+                        <h2 class="contact__title">Interested in working together? Let's talk</h2>
+
+                    </div>
+                    <div class="contact__btn">
+                        <a style="align-items:center; gap:10px; text-align:center;"
+                            href="mailto:jenkinsmulbah6@gmail.com" class="btn btn--secondary">Get in touch
+                            <i class="fa-solid fa-handshake"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div
+                    style="display: flex; min-height: 100vh; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 1.4px; margin-top: 10px;">
+                    <div style="flex: 0 1 700px; margin: auto; padding: 10px; width: 100%;">
+                        <div
+                            style="position: relative; background: #3e3e3e; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); width: 100%;">
+                            <div
+                                style="display: flex; align-items: center; padding: 10px 20px; background: #4d4d4f; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                                <div style="margin-right: auto;">
+                                    <div
+                                        style="display: inline-block; width: 8px; height: 8px; margin-right: 3px; border-radius: 8px; background: #ed1c6f;">
+                                    </div>
+                                    <div
+                                        style="display: inline-block; width: 8px; height: 8px; margin-right: 3px; border-radius: 8px; background: #e8e925;">
+                                    </div>
+                                    <div
+                                        style="display: inline-block; width: 8px; height: 8px; border-radius: 8px; background: #74c54f;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap; flex-direction: column; padding: 20px;">
+                                <div style="flex: 1; padding: 20px;">
+                                    <div style="font-size: 26px; margin-bottom: 10px;">
+                                        <span>CONTACT ME</span>
+                                    </div>
+                                </div>
+                                <div style="">
+                                    <div class="contact-container">
+                                        <form class="contact-form" id="contact-form">
+                                            <label for="name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Your full name"
+                                                required />
+
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" placeholder="Your email address"
+                                                required />
+
+                                            <label for="message">Message</label>
+                                            <textarea id="message" name="message"
+                                                placeholder="Write your message here..." rows="5" required></textarea>
+
+                                            <button type="submit" class="btn btn--secondary" id="submit_btn">Send
+                                                Message</button>
+                                        </form>
+                                        <div id="form-modal" class="modal hidden">
+                                            <div class="modal__content contact__form-dialog">
+                                                <p class="mb-3">Are you sure you want to submit this form?</p>
+                                                <div>
+                                                    <button id="confirm-btn" class="btn btn--secondary">Yes</button>
+                                                    <button id="cancel-btn" class="btn btn--secondary">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </main>
+    <!--=================== footer ====================-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="d-grid footer__wrapper"
+                style="display:flex;justify-content:center; align-items:center; text-align:center;">
+                <div class="footer__content">
+                    <h4 class="footer__title">Follow Me</h4>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="mailto:jenkinsmulbah6@gmail.com" target="_blank" class="footer__social-link">
+                                <i class="fa-regular fa-envelope fa-beat-fade"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://github.com/deginmulbah" target="_blank" class="footer__social-link">
+                                <i class="fa-brands fa-github fa-fade"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://x.com/Degin_mulbah" target="_blank" class="footer__social-link">
+                                <i class="fa-brands fa-square-x-twitter fa-fade"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="footer__copyright">&copy; 2025 Jenkins D. Mulbah. All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <!--=================== SwiperJS  ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--=================== ScrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=================== Main JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
