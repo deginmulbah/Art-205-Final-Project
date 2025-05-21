@@ -1,5 +1,3 @@
----
-
 ## ✨ Features
 
 - ✅ Responsive design using **Flexbox** and **CSS Grid**
